@@ -7,5 +7,7 @@ export default UserProfilePage;
 export async function getServerSideProps(context) {
   const { params, req, res } = context;
 
+  console.log('Server Side code runs');
+
   return { props: { username: 'GyeJin' } };
 }
